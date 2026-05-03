@@ -12,13 +12,13 @@ Notes:
 ```mermaid
 sequenceDiagram
 autonumber
-box darkred User
+box User
 actor User
 end
-box darkgreen Cumulocity
+box Cumulocity
 participant Cumulocity
 end
-box darkblue Device <br>host=rpi5-2ccf674408e9.local
+box Device <br>host=rpi5-2ccf674408e9.local
 participant Tedge-mapper
 participant Http-proxy as C8Y-Http-Proxy
 participant Tedge-agent
@@ -63,17 +63,17 @@ Diagram:
 ```mermaid
 sequenceDiagram
 autonumber
-box darkred User
+box User
 actor User
 end
-box darkgreen Cumulocity
+box Cumulocity
 participant Cumulocity
 end
-box darkblue Main-Device <br>host=rpi5-2ccf674408e9.local
+box Main-Device <br>host=rpi5-2ccf674408e9.local
 participant Tedge-mapper
 participant Http-proxy as C8Y-Http-Proxy
 end
-box purple Child-Device <br>host=rpi4-a3f1b8d2e9c4
+box Child-Device <br>host=rpi4-a3f1b8d2e9c4
 participant Tedge-agent
 end
 Note over Http-proxy: Hosted by tedge-mapper service
