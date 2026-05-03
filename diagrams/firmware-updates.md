@@ -11,13 +11,13 @@ Note:
 ```mermaid
 sequenceDiagram
 autonumber
-box darkred User
+box User
 actor User
 end
-box darkgreen Cumulocity
+box Cumulocity
 participant Cumulocity
 end
-box darkblue Device <br>host=rpi5-2ccf674408e9.local
+box Device <br>host=rpi5-2ccf674408e9.local
 participant Tedge-mapper 
 participant Http-proxy as C8Y-Http-Proxy
 participant Tedge-agent
